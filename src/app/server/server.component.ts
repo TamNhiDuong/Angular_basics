@@ -11,6 +11,7 @@ export class ServerComponent {
     status: string = 'offline';
     enableButton: boolean = false;
     newServerStt: string = 'no new server';
+    serverName: string = 'initial Name';
 
     showStatus() {
         return this.status;
@@ -23,6 +24,8 @@ export class ServerComponent {
     }
 
     onCreateServer() {
-        return this.newServerStt = 'create new server';
+        return this.newServerStt = 'create new server ' + this.serverName;
     }
+
+
 }

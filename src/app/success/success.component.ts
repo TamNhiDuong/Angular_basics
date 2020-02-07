@@ -12,4 +12,5 @@ export class SuccessComponent {
         this.updatedName = (<HTMLInputElement>event.target).value;
     }
 
+
 }

@@ -1,4 +1,11 @@
 <p>server component</p>
 <p>Server ID {{id}} is {{showStatus()}}</p>
-<button [disabled] = "!enableButton" (click)="onCreateServer()">Create new server</button>
+<button 
+  [disabled]="!enableButton" 
+  (click)="onCreateServer()">Create new server name</button>
 <p>{{newServerStt}}</p>
+
+<input 
+  type="text" 
+  class="form-control" 
+  [(ngModel)]="serverName" />
