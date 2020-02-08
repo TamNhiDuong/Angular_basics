@@ -13,6 +13,7 @@ export class ServerComponent {
     newServerStt: string = 'no new server';
     serverName: string = 'initial Name';
     userName: string = '';
+    isClicked: boolean = false;
 
     showStatus() {
         return this.status;
@@ -25,6 +26,7 @@ export class ServerComponent {
     }
 
     onCreateServer() {
+        this.isClicked = true;
         return this.newServerStt = 'create new server ' + this.serverName;
     }
 
