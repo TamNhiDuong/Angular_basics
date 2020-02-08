@@ -9,7 +9,10 @@
   <button 
   [disabled]="!enableButton" 
   (click)="onCreateServer()">Create new server name</button>
-<p *ngIf="isClicked">{{newServerStt}}</p>
+<p *ngIf="isClicked; else noServer">{{newServerStt}}</p>
+<ng-template #noServer>
+    <p>No server created</p>
+</ng-template>
 <!--assignment --> 
 <input 
   type="text"
