@@ -9,3 +9,13 @@
   type="text" 
   class="form-control" 
   [(ngModel)]="serverName" />
+<!--assignment --> 
+<input 
+  type="text"
+  [(ngModel)]="userName"
+  placeholder="userName"
+/>
+<p>User name is: {{userName}}</p>
+<button
+  [disabled]="userName === ''" 
+  (click)="reset()">RESET</button>

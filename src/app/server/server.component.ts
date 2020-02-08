@@ -12,6 +12,7 @@ export class ServerComponent {
     enableButton: boolean = false;
     newServerStt: string = 'no new server';
     serverName: string = 'initial Name';
+    userName: string = '';
 
     showStatus() {
         return this.status;
@@ -27,5 +28,7 @@ export class ServerComponent {
         return this.newServerStt = 'create new server ' + this.serverName;
     }
 
-
+    reset(): string {
+        return this.userName = '';
+    }
 }
