@@ -15,22 +15,28 @@ export class ServerComponent {
     userName: string = '';
     isClicked: boolean = false;
 
-    showStatus() {
-        return this.status;
-    }
-
     constructor() {
         setTimeout(() => {
             this.enableButton= true;
         },2000)
+
+        this.status = Math.random() > 0.5 ? 'online' : 'offline';
+    }
+
+    showStatus() {
+        return this.status;
     }
 
     onCreateServer() {
         this.isClicked = true;
-        return this.newServerStt = 'create new server ' + this.serverName;
+        this.newServerStt = 'create new server ' + this.serverName;
     }
 
     reset(): string {
         return this.userName = '';
+    }
+
+    getColor() {
+        return this.status=== 'online' ? 'blue' : 'red'; 
     }
 }

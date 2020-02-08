@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 
 export class SuccessComponent {
     updatedName: string = '';
+
     onUpdateServerName() {
         this.updatedName = (<HTMLInputElement>event.target).value;
     }
