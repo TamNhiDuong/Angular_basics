@@ -1,0 +1,8 @@
+<p>ASSIGNMENT</p>
+<button (click)="showDetails()">Display details</button>
+<p *ngIf ="isClicked">{{details}}</p>
+<!--<clicks *ngFor = "let click of clicks"></clicks>-->
+<div 
+  *ngFor = "let click of clicks"
+  [ngStyle] = "{backgroundColor: click >= 5 ? 'blue' : 'transparent'}"
+  [ngClass] = "{turnWhite : click >= 5}">{{click}}</div>

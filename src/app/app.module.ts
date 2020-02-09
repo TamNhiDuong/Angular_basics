@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 
 import { ServerComponent } from './server/server.component';
 import { SuccessComponent } from './success/success.component';
+import { AssignmentComponent } from './components/assignment/assignment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
-    SuccessComponent
+    SuccessComponent,
+    AssignmentComponent
   ],
   imports: [
     BrowserModule,

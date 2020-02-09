@@ -14,6 +14,7 @@ export class ServerComponent {
     serverName: string = 'initial Name';
     userName: string = '';
     isClicked: boolean = false;
+    servers= ['server 1', 'server 2'];
 
     constructor() {
         setTimeout(() => {
@@ -30,6 +31,7 @@ export class ServerComponent {
     onCreateServer() {
         this.isClicked = true;
         this.newServerStt = 'create new server ' + this.serverName;
+        this.servers.push(this.serverName);
     }
 
     reset(): string {

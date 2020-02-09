@@ -1,8 +1,12 @@
 <p>server component</p>
 <p 
   [ngStyle]="{backgroundColor: getColor()}"
-  [ngClass]="{offline : status === 'offline'}">Server ID {{id}} is {{showStatus()}}</p>
-<p [ngStyle]="{backgroundColor: getColor()}">Server ID {{id}} is {{showStatus()}}</p>
+  [ngClass]="{offline : status === 'offline'}">
+  Server ID {{id}} is {{showStatus()}}</p>
+
+<p [ngStyle]="{backgroundColor: getColor()}"
+  [ngClass]="{offline : status === 'offline'}">
+  Server ID {{id}} is {{showStatus()}}</p>
 
 <input 
   type="text" 
